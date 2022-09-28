@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 0 !important;
+
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0!important;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0!important;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0!important;
+}
+
+h4{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0!important;
+}
+
+h5{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0!important;
+}
+a{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+  z-index: 100;
+  transition-duration: 0.3s;
+  top: 0;
+}
+.links {
+    display: inline-block;
+    position: relative;
+    font-size: 1rem !important;
+    background-color: transparent !important;
+  }
+
+
+  .service-items span{
+    font-size: 2.5rem;
+    color: #3419AB !important;
+  }
+  .service-items p{
+    font-size: 1rem;
+    color: #3419AB !important;
+    
+
+  }
+.dropdown-menu{
+background-color: white !important;
+}
+
+  .links:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #3419AB;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .links:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .portfolio:hover{
+    color: rgb(255, 255, 255) !important;
+    background-color: #3419AB;
+  }
+  .contactus:hover{
+    background-color: #200f6c !important;
+  }
+.service-dropdown a::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.145);
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 8px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+.custom-links:hover{
+  color: #3419AB !important;
+}
+.tools svg{
+  height: 3rem !important;
+  fill: rgb(187, 187, 187);
+}
+.service-dropdown a:hover::before {
+  bottom: 0;
+  height: 100%;
+}
+.service-dropdown li{
+  list-style-type: none;
+  font-size: small;
+}
+.header{
+  height: 100vh;
+}
+.header-content h1{
+  font-size: 5rem;
+  color: #3419AB;
+}
+.header-content p{
+  color: rgb(79, 79, 79);
+}
+/* ********* */
+.about1,.about2,.about3,.about4,.about5{
+  overflow: hidden;
+  max-height: 2rem;
+  transition: max-height 0.3s ease-out;
+}
+.about1:hover,.about2:hover,.about3:hover,.about4:hover,.about5:hover{
+  max-height: 30rem;
+    transition: max-height 0.25s ease-in;
+}
+.about1:hover,.about2:hover,.about3:hover,.about4:hover,.about5:hover h4{
+  color: #3419AB;
+}
+/* ***** */
+.team h1{
+  font-size: 7rem;
+  background: -webkit-linear-gradient(50deg, #5bdbf8 30%, #3419AB 40%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+  color: transparent !important;
+}
+.team-person{
+  width: 13rem !important;
+  height: 13rem !important;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header-content h1{
+    font-size: 3rem;
+    color: #14b2d5;
+  }
+  .accordion-button{
+    font-size: 1.5rem !important;
+  }
+  .team h1{
+    font-size: 4rem;
+  }
+  .team-person{
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+  .team p{
+    font-size: 0.8rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .team-person{
+    width: 7rem !important;
+    height: 7rem !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .team-person{
+    width: 13rem !important;
+    height: 13rem !important;
+  }
+  .team h1{
+    font-size: 7rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
